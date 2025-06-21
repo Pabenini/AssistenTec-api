@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abrir Chamado - AssistenTec</title>
+  <link rel="stylesheet" href="style_abrirChamados.css">
+</head>
+<body>
+  <div class="form-container">
+
+    <h1>AssistenTec</h1>
+    <img src="Logo_AssistenTec.png" alt="Logo AssistenTec" class="logo">
+    
+    
+    <h2>Abrir Chamado</h2>
+
+    <form id="formChamado">
+      <!-- Cliente (simulado como ID fixo) -->
+      <input type="hidden" id="id_cliente" value="1">
+
+      <!-- Prioridade -->
+       
+      <label for="prioridade">Prioridade</label>
+      <select id="prioridade" required>
+        <option value="">Selecione</option>
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+      </select>
+
+         <!-- Tipo de problema -->
+        <label for="tipo_problema">Tipo do Problema</label>
+        <select id="tipo_problema" required onchange="verificarProblema()">
+        <option value="">Selecione</option>
+        <option value="Hardware">Hardware</option>
+        <option value="Software">Software</option>
+        <option value="Rede">Rede</option>
+        <option value="Outro">Outro</option>
+        </select>
+
+        <!-- Campos adicionais para Hardware -->
+        <div id="camposHardware" style="display: none;">
+        <label for="tipo_equipamento">Tipo do Equipamento</label>
+        <input type="text" id="tipo_equipamento" placeholder="Ex: Impressora, Notebook">
+
+        <br for="modelo_equipamento">Modelo do Equipamento</label>
+        <input type="text" id="modelo_equipamento" placeholder="Ex: HP Deskjet 2676">
+        </div>
+
+
+      <!-- Descrição -->
+      <br for="descricao_problema">Descrição Detalhada</label>
+      <textarea id="descricao_problema" rows="5" required></textarea>
+
+      <button type="submit">Enviar Chamado</button>
+    </form>
+
+    <p id="mensagemSucesso" class="sucesso"></p>
+  </div>
+
+  <script src="script_abrirChamdos.js"></script>
+</body>
+</html>

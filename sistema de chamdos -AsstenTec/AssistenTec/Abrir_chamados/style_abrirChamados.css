@@ -1,0 +1,108 @@
+/* Container da página de abrir chamado */
+.form-container {
+    background-color: #c9c7c7; /* tom escuro compatível com fundo preto */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+h1{
+  color: #32009E;
+}
+
+h2{
+  color: #000;
+}
+
+/* Textarea e select */
+textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #32009E;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    resize: vertical;
+    background-color: #fdfafa;
+    color: #000000;
+}
+
+textarea:focus, select:focus {
+    outline: none;
+    border-color: #32009E;
+    box-shadow: 0 0 5px #32009E;
+}
+
+/* Mensagem de sucesso */
+.sucesso {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #32009E;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Botões */
+button {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #32009E;
+    background-color: transparent;
+    border: 2px solid #32009E;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    border-radius: 45px;
+}
+
+button:hover {
+    background-color: #32009E;
+    color: #fff;
+}
+
+/* Campos de hardware */
+#camposHardware {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #32009E;
+    border-radius: 8px;
+    background-color: #aea9a9;
+    font-size: 20px;
+}
+
+#camposHardware label {
+    display: block;
+    margin-top: 10px;
+    color: #000000;
+}
+
+#camposHardware input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #32009E;
+    border-radius: 6px;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#camposHardware input[type="text"]:focus {
+    outline: none;
+    border-color: #32009E;
+    box-shadow: 0 0 5px #32009E;
+}
+

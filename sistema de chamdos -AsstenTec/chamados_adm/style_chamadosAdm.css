@@ -1,0 +1,201 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #32009E;
+}
+
+/* Campo de filtro */
+.filtro {
+  margin-bottom: 20px;
+}
+
+.filtro input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(211, 35, 35, 0.05);
+}
+
+thead {
+  background-color: #002244;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+tbody tr:hover {
+  background-color: #e2ebf3;
+}
+
+/* Botões */
+button {
+  padding: 6px 10px;
+  margin: 2px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(1) { background-color: #004488; color: #fff; }        /* Atribuir Técnico */
+button:nth-child(2) { background-color: #8b0000; color: #fff; }        /* Encerrar */
+button:nth-child(3) { background-color: #666666; color: #fff; }        /* Anexar Fotos */
+button:nth-child(4) { background-color: #228B22; color: #fff; }        /* RAT */
+
+/* Status com cores */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.85); /* Caixa branca semi-transparente */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* blur dentro da caixa */
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 90%;
+}
+/*----------------
+/* Estilização da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do cabeçalho da tabela */
+thead {
+  background-color: #f4f4f4;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1f0f43;
+}
+
+/* Estilização do campo de pesquisa */
+#filtroInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de foco no campo de pesquisa */
+#filtroInput:focus {
+  border-color: #32009E;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder estilizado */
+#filtroInput::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Estilização da célula do campo de pesquisa */
+th:last-child {
+  width: 200px; /* Ajuste conforme necessário */
+}
+
+/* Estilização do corpo da tabela */
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Estilização responsiva para telas menores */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  #filtroInput {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  th:last-child {
+    width: 150px;
+  }
+}
