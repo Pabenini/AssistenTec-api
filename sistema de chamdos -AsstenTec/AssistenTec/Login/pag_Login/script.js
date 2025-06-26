@@ -7,9 +7,9 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
     // Exemplo simples (ideal: usar autenticação real)
     if (usuario === "cliente" && senha === "123") {
-        window.location.href = "cliente-dashboard.html";
+        window.location.href = "../../chamadosCliente/index_chamdosc.html";
     } else if (usuario === "tecnico" && senha === "123") {
-        window.location.href = "tecnico-dashboard.html";
+        window.location.href = "../../chamados/index_chamdosadm.html";
     } else {
         erro.textContent = "Usuário ou senha inválidos!";
     }

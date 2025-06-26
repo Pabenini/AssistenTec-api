@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamados - Admin | AssistenTec</title>
+  <link rel="stylesheet" href="style_chamadosAdm.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="Logo_AssistenTec.png" alt="Logo" class="logo">
+      <h1>Chamados - Painel Administrativo</h1>
+    </header>
+
+    
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Data Abertura</th>
+            <th>Prioridade</th>
+            <th>Status</th>
+            <th>Técnico</th>
+            <th>Tipo</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+            <th><input type="text" id="filtroInput" placeholder="Pesquisar chamados por cliente, tipo ou técnico..."></th>
+
+          </tr>
+        </thead>
+        <tbody id="tabelaChamados">
+          <!-- Dados adicionados por JS -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- Modal para anexar fotos -->
+  <div id="modalFotos" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModalFotos()">&times;</span>
+      <h2>Anexar Fotos ao Chamado <span id="modalIdChamadoFotos"></span></h2>
+      <input type="file" multiple accept="image/*">
+      <button onclick="anexarFotos()">Enviar Fotos</button>
+    </div>
+  </div>
+
+  <script src="script_chamadosAdm.js"></script>
+</body>
+</html>
